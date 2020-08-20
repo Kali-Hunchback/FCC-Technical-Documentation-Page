@@ -1,6 +1,7 @@
 # Free Code Camp Technical Documentation Page Project
 Project undertaken as a part of FreeCodeCamp's Responsive Web Design Certification<br>
 **Project 4 of 5**<br>
+This project is the first I have undertaken in a local environment whilst undertaking FreeCodeCamp's Web Development Certification. The included script is a testing suite available from FCC in order to enable compliance with the curriculum.
 
 ## Project is in progress as of present. Will be deployed on completion.
 ## User Stories
