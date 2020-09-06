@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles/styles.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet"> 
-		<title>C# Reference</title>
-		
-	</head>
-	<body>
-		<nav id="navbar">
-			<header id="nav-header">C# Reference</header>
-			<a href="#Introduction" class="nav-link">Introduction</a>
-			<a href="#What_you_should_already_know_or_have" class="nav-link"
-				>What you should already know or have</a
-			> 
-			<a href="#Installing_C#" class="nav-link">Installing C#</a>
-			<a href="#C#_Code_Examples" class="nav-link">C# Code Examples</a>
-			<a href="#Opening_C#" class="sub-link">Opening C#</a>
-			<a href="#C#_Hello_World" class="sub-link">C# Hello World</a>
-			<a href="#References" class="nav-link">References</a>
-			
-		</nav>
-		<main id="main-doc">
-			
-			<section class="main-section" id="Introduction">
-				<header class="header">Introduction</header>
-				<p class="section-text">
-					C# syntax is highly expressive, yet it is also simple and easy to learn. The curly brace
-					syntax of C# will be instantly recognizable to anyone familiar with C, C++, or Java.
-					Developers who know any of these languages are typically able to begin to work
-					productively in C# within a short time. C# syntax simplifies many of the complexities of
-					C++ and provides powerful features such as nullable types, enumerations, delegates, lambda
-					expressions, and direct memory access. C# supports generic methods and types, which
-					provide increased type safety and performance, and iterators, which enable implementers of
-					collection classes to define custom iteration behaviors that are simple to use by client
-					code. Language-Integrated Query (LINQ) expressions make the strongly typed query a
-					first-class language construct.
-				</p>
-				<p class="section-text">
-					As an object-oriented language, C# supports the concepts of encapsulation, inheritance,
-					and polymorphism. All variables and methods, including the Main method, the application's
-					entry point, are encapsulated within class definitions. A class may inherit directly from
-					one parent class, but it may implement any number of interfaces. Methods that override
-					virtual methods in a parent class require the override keyword as a way to avoid
-					accidental redefinition. In C#, a struct is like a lightweight class; it is a
-					stack-allocated type that can implement interfaces but does not support inheritance.
-				</p>
-			</section>
-			<section class="main-section" id="What_you_should_already_know_or_have">
-				<header class="header">What you should already know or have</header>
-				<ul class="section-list">
-					<li class="section-list-items">
-						This documentation assumes you have a basic understanding of programming concepts in
-						another language
-					</li>
-					<li class="section-list-items">
-						This documentation assumes that you have an understanding of some form of 'Curly Brace'
-						({}) and semi-colon line syntax;
-					</li>
-					<li class="section-list-items">Internet Connection with decent up/down speeds</li>
-					<li class="section-list-items">
-						A suitable environment to install Visual Studio on (Or VSCode)
-					</li>
-					<li class="section-list-items">Some time to learn about C#!</li>
-				</ul>
-				<p class="section-text">
-					If you have all of the above mentioned, then continue on! Otherwise, try and fill your
-					knowledge gaps and return here.
-				</p>
-			</section>
-			<section class="main-section" id="Installing_C#">
-				<header class="header">Installing C#</header>
-				<p class="section-text">
-					The first and simplest option if you are a Windows or MacOS user is to go download Visual
-					Studio for your Operating System
-					<a target="_external" href="https://visualstudio.microsoft.com/downloads/">here</a><br />
-					Once you've done that, run the installer and choose a suitable place for the installation.
-					At some point, you'll be asked which 'workloads' you would like to install. For the code
-					examples below we'll only need .Net CORE desktop development. Once the installer is
-					complete, we're ready to go!
-				</p>
-				<p class="section-text">
-					For Linux users or individuals that would like to utilize VS Code instead of Visual Studio
-					you'll simply need to download the copy of VSCode relevant to your OS
-					<a target="external" href="https://visualstudio.microsoft.com/downloads/">here</a> <br />
-					and run the associated installer. <br />
-					Additionally in order to compile the code, it is necessary to download the most recent
-					.Net CORE SDK (available
-					<a target="_external" href="https://dotnet.microsoft.com/download/dotnet-core">here</a>)
-					and the C# extension from the VS Code Market Place (fourth tab down on the left-most bar).
-					It is recommended to restart your computer before continuing to enable the instantiation
-					of all items necessary on the path. and VS Code is good to go with C#
-				</p>
-			</section>
-			<section class="main-section" id="C#_Code_Examples">
-				<header class="header">C# Code Examples</header>
-				<h2 class="section-header" id="Opening_C#">Opening C#</h2>
-				<p class="section-text">If you were a Visual Studio User, simply double click the icon and select "create new project" and select the "Console App (.Net CORE) option", name it and choose a place to store the project and the viewer will open for you</p>
-				<p class="section-text">If you were a VS Code User open your command line interface (CLI), navigate to the file desired for creation and enter 
-					<pre><code class="code-elem">dotnet new console</code></pre> <p class="section-text">A notification will appear, click yes and the viewer will finish loading dependencies and assets. When you want to run your code simply enter </p><pre><code class="code-elem">dotnet run</code></pre> <p class="section-text">Inside of the containing file.</p>
-				</p>
-				<h2 class="section-header" id="C#_Hello_World">C# Hello World</h2>
-				<p class="section-text">
-					Once you've selected the project, you may realize that the Hello, World program is loaded by default, it should appear as below: 
-					<pre><code class="code-elem">using System;
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles/styles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,700&display=swap"
+		rel="stylesheet">
+	<title>C# Reference</title>
+
+</head>
+
+<body>
+	<nav id="navbar">
+		<header id="nav-header">C# Reference</header>
+		<a href="#Introduction" class="nav-link">Introduction</a>
+		<a href="#What_you_should_already_know_or_have" class="nav-link">What you should already know or have</a>
+		<a href="#Installing_C#" class="nav-link">Installing C#</a>
+		<a href="#C#_Code_Examples" class="nav-link">C# Code Examples</a>
+		<a href="#Opening_C#" class="sub-link">Opening C#</a>
+		<a href="#C#_Hello_World" class="sub-link">C# Hello World</a>
+		<a href="#References" class="nav-link">References</a>
+
+	</nav>
+	<main id="main-doc">
+
+		<section class="main-section" id="Introduction">
+			<header class="header">Introduction</header>
+			<p class="section-text">
+				C# syntax is highly expressive, yet it is also simple and easy to learn. The curly brace
+				syntax of C# will be instantly recognizable to anyone familiar with C, C++, or Java.
+				Developers who know any of these languages are typically able to begin to work
+				productively in C# within a short time. C# syntax simplifies many of the complexities of
+				C++ and provides powerful features such as nullable types, enumerations, delegates, lambda
+				expressions, and direct memory access. C# supports generic methods and types, which
+				provide increased type safety and performance, and iterators, which enable implementers of
+				collection classes to define custom iteration behaviors that are simple to use by client
+				code. Language-Integrated Query (LINQ) expressions make the strongly typed query a
+				first-class language construct.
+			</p>
+			<p class="section-text">
+				As an object-oriented language, C# supports the concepts of encapsulation, inheritance,
+				and polymorphism. All variables and methods, including the Main method, the application's
+				entry point, are encapsulated within class definitions. A class may inherit directly from
+				one parent class, but it may implement any number of interfaces. Methods that override
+				virtual methods in a parent class require the override keyword as a way to avoid
+				accidental redefinition. In C#, a struct is like a lightweight class; it is a
+				stack-allocated type that can implement interfaces but does not support inheritance.
+			</p>
+		</section>
+		<section class="main-section" id="What_you_should_already_know_or_have">
+			<header class="header">What you should already know or have</header>
+			<ul class="section-list">
+				<li class="section-list-items">
+					This documentation assumes you have a basic understanding of programming concepts in
+					another language
+				</li>
+				<li class="section-list-items">
+					This documentation assumes that you have an understanding of some form of 'Curly Brace'
+					({}) and semi-colon line syntax;
+				</li>
+				<li class="section-list-items">Internet Connection with decent up/down speeds</li>
+				<li class="section-list-items">
+					A suitable environment to install Visual Studio on (Or VSCode)
+				</li>
+				<li class="section-list-items">Some time to learn about C#!</li>
+			</ul>
+			<p class="section-text">
+				If you have all of the above mentioned, then continue on! Otherwise, try and fill your
+				knowledge gaps and return here.
+			</p>
+		</section>
+		<section class="main-section" id="Installing_C#">
+			<header class="header">Installing C#</header>
+			<p class="section-text">
+				The first and simplest option if you are a Windows or MacOS user is to go download Visual
+				Studio for your Operating System
+				<a target="_external" href="https://visualstudio.microsoft.com/downloads/">here</a><br />
+				Once you've done that, run the installer and choose a suitable place for the installation.
+				At some point, you'll be asked which 'workloads' you would like to install. For the code
+				examples below we'll only need .Net CORE desktop development. Once the installer is
+				complete, we're ready to go!
+			</p>
+			<p class="section-text">
+				For Linux users or individuals that would like to utilize VS Code instead of Visual Studio
+				you'll simply need to download the copy of VSCode relevant to your OS
+				<a target="external" href="https://visualstudio.microsoft.com/downloads/">here</a> <br />
+				and run the associated installer. <br />
+				Additionally in order to compile the code, it is necessary to download the most recent
+				.Net CORE SDK (available
+				<a target="_external" href="https://dotnet.microsoft.com/download/dotnet-core">here</a>)
+				and the C# extension from the VS Code Market Place (fourth tab down on the left-most bar).
+				It is recommended to restart your computer before continuing to enable the instantiation
+				of all items necessary on the path. and VS Code is good to go with C#
+			</p>
+		</section>
+		<section class="main-section" id="C#_Code_Examples">
+			<header class="header">C# Code Examples</header>
+			<h2 class="section-header" id="Opening_C#">Opening C#</h2>
+			<p class="section-text">If you were a Visual Studio User, simply double click the icon and select "create new
+				project" and select the "Console App (.Net CORE) option", name it and choose a place to store the project and
+				the viewer will open for you</p>
+			<p class="section-text">If you were a VS Code User open your command line interface (CLI), navigate to the file
+				desired for creation and enter
+			<pre><code class="code-elem">dotnet new console</code></pre>
+			<p class="section-text">A notification will appear, click yes and the viewer will finish loading dependencies and
+				assets. When you want to run your code simply enter </p>
+			<pre><code class="code-elem">dotnet run</code></pre>
+			<p class="section-text">Inside of the containing file.</p>
+			</p>
+			<h2 class="section-header" id="C#_Hello_World">C# Hello World</h2>
+			<p class="section-text">
+				Once you've selected the project, you may realize that the Hello, World program is loaded by default, it should
+				appear as below:
+			<pre><code class="code-elem">using System;
 						
 namespace HelloWorld
 {
@@ -117,23 +126,44 @@ namespace HelloWorld
  }
 }
 						</code></pre>
-				</p>
-				<p class="section-text">
-					There is a few things to note about this program, the first is the <span><code class="code-elem">using System</code></span> in the top line of the editor. This is C#'s way of Input and Output of functions. In this case, we are calling functions stored in the System package, which contains input and output functionality for the console. <br>
-					The second is in the next line and is <span><code class="code-elem">namespace HelloWorld</code></span> this is the name of the project which you entered and represent the sum of your code all the code inside of the project and acts as a way to reference the program it's self. <br>
-					Next we have <pre><code class="code-elem">static void Main(string[] args)</code></pre> <p class="section-text">The Main functions represent the starting point of our program and will always begin from this point whenever the project is compiled or run. It accepts an array of strings as arguments.</p>
-					Finally we have <pre><code class="code-elem">Console.WriteLine("Hello, World")</code></pre><p class="section-text">This line of code accesses the Console and then calls for the </p><code class="code-elem">WriteLine(string)</code> <p class="section-text">Method which accepts a string parameter which is text. Whatever is placed inside of the parentheses and quotes will be output onto the console screen (Try changing the text inside of the quotes in your editor now!) and click the run button in the top toolbar or for VS Code or linux users enter</p> <code class="code-elem">dotnet run</code> <p class="section-text">Inside of the file container in your CLI</p>
-				</p>
+			</p>
+			<p class="section-text">
+				There is a few things to note about this program, the first is the <span><code
+						class="code-elem">using System</code></span> in the top line of the editor. This is C#'s way of Input and
+				Output of functions. In this case, we are calling functions stored in the System package, which contains input
+				and output functionality for the console. <br>
+				The second is in the next line and is <span><code class="code-elem">namespace HelloWorld</code></span> this is
+				the name of the project which you entered and represent the sum of your code all the code inside of the project
+				and acts as a way to reference the program it's self. <br>
+				Next we have
+			<pre><code class="code-elem">static void Main(string[] args)</code></pre>
+			<p class="section-text">The Main functions represent the starting point of our program and will always begin from
+				this point whenever the project is compiled or run. It accepts an array of strings as arguments.</p>
+			Finally we have
+			<pre><code class="code-elem">Console.WriteLine("Hello, World")</code></pre>
+			<p class="section-text">This line of code accesses the Console and then calls for the </p><code
+				class="code-elem">WriteLine(string)</code>
+			<p class="section-text">Method which accepts a string parameter which is text. Whatever is placed inside of the
+				parentheses and quotes will be output onto the console screen (Try changing the text inside of the quotes in
+				your editor now!) and click the run button in the top toolbar or for VS Code or linux users enter</p> <code
+				class="code-elem">dotnet run</code>
+			<p class="section-text">Inside of the file container in your CLI</p>
+			</p>
 			<section class="main-section" id="References">
 				<header class="header">References</header>
 				<p class="section-text">
-					The core contents of this document is available <a href="https://docs.microsoft.com/en-us/dotnet/">from various pages within Microsoft's documentation</a>
+					The core contents of this document is available <a href="https://docs.microsoft.com/en-us/dotnet/">from
+						various pages within Microsoft's documentation</a>
 				</p>
 				<p class="section-text">
-					Some of the information in this page was changed for flow of reading, but all content remains property of Microsoft.
+					Some of the information in this page was changed for flow of reading, but all content remains property of
+					Microsoft.
 				</p>
 			</section>
-		</main>
-		<footer id="footer"><script src="scripts/FCC-Tests.js"></script></footer>
-	</body>
+	</main>
+	<footer id="footer">
+		<script src="scripts/FCC-Tests.js"></script>
+	</footer>
+</body>
+
 </html>
