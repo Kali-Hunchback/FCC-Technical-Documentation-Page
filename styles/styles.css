@@ -1,73 +1,72 @@
 :root {
-	font-size: 10px;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	/*Winter Pine Forest palette found at https://www.color-hex.com/color-palette/96707*/
-	--dark-blue: #2a314a;
-	--dark-medium-blue: #415777;
-	--medium-blue: #617da1;
-	--light-medium-blue: #8aaacd;
-	--light-blue: #b5d8f5;
-	color: var(--dark-blue);
-	font-family: 'Roboto Mono', monospace;
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*Winter Pine Forest palette found at https://www.color-hex.com/color-palette/96707*/
+  --dark-blue: #2a314a;
+  --dark-medium-blue: #415777;
+  --medium-blue: #617da1;
+  --light-medium-blue: #8aaacd;
+  --light-blue: #b5d8f5;
+  color: var(--dark-blue);
+  font-family: "Roboto Mono", monospace;
 }
 
 html {
-	background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 
 body {
-	width: 85%;
-	margin-left: 310px;
-	line-height: 1.6;
+  width: 85%;
+  margin-left: 310px;
+  line-height: 1.6;
 }
 header,
 h2 {
-	font-size: 2.4em;
-	font-weight: 700;
-	font-style: normal;
-	color: var(--dark-blue);
+  font-size: 2.4em;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--dark-blue);
 }
 
 section > p,
 li {
-	font-size: 1.4em;
-	font-weight: 300;
-	
+  font-size: 1.4em;
+  font-weight: 300;
 }
 
 #navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	border-right: 3px solid;
-	min-width: 280px;
-	width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-right: 3px solid;
+  min-width: 280px;
+  width: 300px;
 }
 
 #navbar header {
-	border-bottom: 2px solid;
-	padding: 15px 5px;
-	font-size: 1.8em;
-	font-weight: 700;
+  border-bottom: 2px solid;
+  padding: 15px 5px;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 #navbar a {
-	display: block;
-	position: relative;
-	cursor: pointer;
-	text-decoration: none;
-	color: var(--dark-blue);
-	padding: 15px 5px;
-	font-size: 1.6em;
-	border-bottom: 2px solid;
-	margin: 5px 0px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dark-blue);
+  padding: 15px 5px;
+  font-size: 1.6em;
+  border-bottom: 2px solid;
+  margin: 5px 0px;
 }
 
 pre,
 code {
-	background-color: var(--light-medium-blue);
-	font-size: 1.4rem;
-	font-weight: 400;
+  background-color: var(--light-medium-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
 }
