@@ -34,3 +34,11 @@ This project is the first I have undertaken in a local environment whilst undert
 1. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
 
 1. My Technical Documentation page should use at least one media query.
+
+##Deployment
+
+Page is presently deploy on Github Pages due to its static nature. Available At: https://wade-roberts.github.io/FCC-Technical-Documentation-Page/
+
+##Testing
+
+When viewing the page through it's Github Pages Deployment, simply click the small icon in the top left, select **"Technical Documentation Page"** and run the tests to see them completed. 
