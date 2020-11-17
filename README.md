@@ -3,7 +3,6 @@ Project undertaken as a part of FreeCodeCamp's Responsive Web Design Certificati
 **Project 4 of 5**<br>
 This project is the first I have undertaken in a local environment whilst undertaking FreeCodeCamp's Web Development Certification. The included script is a testing suite available from FCC in order to enable compliance with the curriculum.
 
-## Project is in progress as of present. Will be deployed on completion.
 ## User Stories
 1. I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 
