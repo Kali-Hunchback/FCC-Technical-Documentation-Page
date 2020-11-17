@@ -10,7 +10,7 @@
   --light-medium-blue: #8aaacd;
   --light-blue: #b5d8f5;
   color: var(--dark-blue);
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  width: 85%;
+  width: 85vw;
   margin-left: 310px;
   line-height: 1.6;
 }
@@ -34,6 +34,7 @@ section > p,
 li {
   font-size: 1.4em;
   font-weight: 300;
+  width: 82vw;
 }
 
 #navbar {
@@ -42,8 +43,8 @@ li {
   left: 0;
   height: 100%;
   border-right: 3px solid;
-  min-width: 280px;
-  width: 300px;
+  width: 13vw;
+  background-color: var(--medium-blue);
 }
 
 #navbar header {
@@ -51,17 +52,19 @@ li {
   padding: 15px 5px;
   font-size: 1.8em;
   font-weight: 700;
+  color: var(--light-blue);
 }
 #navbar a {
   display: block;
   position: relative;
   cursor: pointer;
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--light-blue);
   padding: 15px 5px;
   font-size: 1.6em;
   border-bottom: 2px solid;
   margin: 5px 0px;
+  letter-spacing: 2px;
 }
 
 pre,
@@ -69,4 +72,23 @@ code {
   background-color: var(--light-medium-blue);
   font-size: 1.4rem;
   font-weight: 400;
+  width: 82vw;
+}
+
+@media only screen and (max-width: 1700px) {
+  body {
+    margin-left: 15vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #navbar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #navbar a {
+    margin: 2px; 
+    font-size: 1.2em;
+  }
 }

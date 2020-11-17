@@ -12,16 +12,18 @@
   </head>
 
   <body>
-    <nav id="navbar">
-      <header id="nav-header">C# Reference</header>
-      <a href="#Introduction" class="nav-link">Introduction</a>
-      <a href="#What_you_should_already_know_or_have" class="nav-link">What you should already know or have</a>
-      <a href="#Installing_C#" class="nav-link">Installing C#</a>
-      <a href="#C#_Code_Examples" class="nav-link">C# Code Examples</a>
-      <a href="#Opening_C#" class="sub-link">Opening C#</a>
-      <a href="#C#_Hello_World" class="sub-link">C# Hello World</a>
-      <a href="#References" class="nav-link">References</a>
-    </nav>
+    <div>
+      <nav id="navbar">
+        <header id="nav-header">C# Reference</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#What_you_need" class="nav-link">What you need</a>
+        <a href="#Installing_C#" class="nav-link">Installing C#</a>
+        <a href="#C#_Code_Examples" class="nav-link">C# Code Examples</a>
+        <a href="#Opening_C#" class="sub-link">Opening C#</a>
+        <a href="#C#_Hello_World" class="sub-link">C# Hello World</a>
+        <a href="#References" class="nav-link">References</a>
+      </nav>
+    </div>
     <main id="main-doc">
 
       <section class="main-section" id="Introduction">
@@ -48,8 +50,8 @@
           stack-allocated type that can implement interfaces but does not support inheritance.
         </p>
       </section>
-      <section class="main-section" id="What_you_should_already_know_or_have">
-        <header class="header">What you should already know or have</header>
+      <section class="main-section" id="What_you_need">
+        <header class="header">What you need</header>
         <ul class="section-list">
           <li class="section-list-items">
             This documentation assumes you have a basic understanding of programming concepts in
@@ -113,7 +115,7 @@
         <p class="section-text">
           Once you've selected the project, you may realize that the Hello, World program is loaded by default, it
           should
-          appear as below:
+          appear as below: <!--the .code-elem object is formatted this way due to using pre to handle pre-formatted text-->
         <pre><code class="code-elem">using System;
 						
 namespace HelloWorld
